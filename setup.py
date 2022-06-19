@@ -52,10 +52,10 @@ if minor_version % 2:
 else:
     branch = series
 
-download_url = 'https://github.com/tryton-ar/sale_subscription_payment_collect/tree/%s' % branch
+download_url = 'https://github.com/rollyar/sale_subscription_payment_collect/tree/%s' % branch
 
 LINKS = {
-    'trytonar_payment_collect': ('git+https://github.com/tryton-ar/'
+    'trytonar_payment_collect': ('git+https://github.com/rollyar/'
         'payment_collect.git@%s#egg=trytonar_payment_collect-%s' %
         (branch, series)),
     }
@@ -79,7 +79,7 @@ setup(name='%s_%s' % (PREFIX, MODULE),
     long_description=read('README.rst'),
     author='tryton-ar',
     author_email='info@gcoop.coop',
-    url='http://github.com/tryton-ar/sale_subscription_payment_collect',
+    url='http://github.com/rollyar/sale_subscription_payment_collect',
     download_url=download_url,
     project_urls={
         "Bug Tracker": 'https://bugs.tryton.org/',
